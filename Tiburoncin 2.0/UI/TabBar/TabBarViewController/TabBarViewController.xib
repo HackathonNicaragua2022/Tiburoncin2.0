@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarViewController" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+            <connections>
+                <outlet property="mainContainer" destination="W5P-ly-kjw" id="X8C-M4-oXf"/>
+                <outlet property="tabBarView" destination="apj-hT-PHh" id="bhV-LM-Vpd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-ly-kjw">
+                    <rect key="frame" x="0.0" y="44" width="414" height="766"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apj-hT-PHh">
+                    <rect key="frame" x="0.0" y="810" width="414" height="86"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBarImage" translatesAutoresizingMaskIntoConstraints="NO" id="XG0-73-xwX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="8vz-f1-1Yc"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZuD-tg-YKX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7F-v5-4cg">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapHome:" destination="-1" eventType="touchUpInside" id="2fp-Hr-34C"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypa-ZQ-S4U">
+                                    <rect key="frame" x="85" y="0.0" width="74.5" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapSearch:" destination="-1" eventType="touchUpInside" id="hyE-lm-wtu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d97-FP-ATN">
+                                    <rect key="frame" x="169.5" y="0.0" width="75" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapMiddle:" destination="-1" eventType="touchUpInside" id="bSK-Bb-YCO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iY4-n7-Tkp">
+                                    <rect key="frame" x="254.5" y="0.0" width="74.5" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapMessages:" destination="-1" eventType="touchUpInside" id="B2l-z9-VVM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcl-bc-12i">
+                                    <rect key="frame" x="339" y="0.0" width="75" height="52"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="didTapProfile:" destination="-1" eventType="touchUpInside" id="HIF-3k-O2Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="7Uz-01-Dpu"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="XG0-73-xwX" firstAttribute="top" secondItem="apj-hT-PHh" secondAttribute="top" id="6Nx-Uk-T2Y"/>
+                        <constraint firstAttribute="trailing" secondItem="XG0-73-xwX" secondAttribute="trailing" id="DUo-Bj-d01"/>
+                        <constraint firstItem="ZuD-tg-YKX" firstAttribute="top" secondItem="apj-hT-PHh" secondAttribute="top" id="G7U-6J-bUp"/>
+                        <constraint firstAttribute="height" constant="86" id="LDi-i9-ex6"/>
+                        <constraint firstItem="XG0-73-xwX" firstAttribute="leading" secondItem="apj-hT-PHh" secondAttribute="leading" id="TaO-cI-dum"/>
+                        <constraint firstItem="ZuD-tg-YKX" firstAttribute="leading" secondItem="apj-hT-PHh" secondAttribute="leading" id="TmV-vU-DEX"/>
+                        <constraint firstAttribute="trailing" secondItem="ZuD-tg-YKX" secondAttribute="trailing" id="l12-LK-VRL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="W5P-ly-kjw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6DJ-cs-dgF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="apj-hT-PHh" secondAttribute="trailing" id="7VZ-dn-SWU"/>
+                <constraint firstItem="apj-hT-PHh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WV1-gO-mVT"/>
+                <constraint firstItem="W5P-ly-kjw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cha-aJ-Vjd"/>
+                <constraint firstAttribute="bottom" secondItem="apj-hT-PHh" secondAttribute="bottom" id="llK-p0-QcW"/>
+                <constraint firstItem="apj-hT-PHh" firstAttribute="top" secondItem="W5P-ly-kjw" secondAttribute="bottom" id="qFU-iI-Ey8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W5P-ly-kjw" secondAttribute="trailing" id="xi9-AO-uUR"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabBarImage" width="734" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

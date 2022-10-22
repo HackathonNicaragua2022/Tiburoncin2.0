@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fontspring-regular.otf">
+            <string>FONTSPRINGDEMO-AvionicWideRegular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+            <connections>
+                <outlet property="communityChat" destination="CJb-Cx-SyR" id="gmj-Qn-Q0Y"/>
+                <outlet property="savedClasses" destination="gMM-zJ-ml4" id="Oa4-Tj-yAq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shark" translatesAutoresizingMaskIntoConstraints="NO" id="D2T-6a-vYW">
+                    <rect key="frame" x="102" y="74" width="210" height="210"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="ITB-n7-2ws"/>
+                        <constraint firstAttribute="height" constant="210" id="b0G-wB-nX3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Tiburoncin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKR-6K-JYU">
+                    <rect key="frame" x="95" y="304" width="225" height="31"/>
+                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-AvionicWideRegular" family="FONTSPRING DEMO - Avionic Wide" pointSize="26"/>
+                    <color key="textColor" name="Font Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATAGALPA, NICARAGUA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTO-lj-dUb">
+                    <rect key="frame" x="90" y="343" width="235" height="19"/>
+                    <fontDescription key="fontDescription" name="FONTSPRINGDEMO-AvionicWideRegular" family="FONTSPRING DEMO - Avionic Wide" pointSize="16"/>
+                    <color key="textColor" name="Font Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMM-zJ-ml4">
+                    <rect key="frame" x="20" y="377" width="374" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLASES GUARDADAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-0C-ksh">
+                            <rect key="frame" x="82" y="17" width="210" height="21"/>
+                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-AvionicWideRegular" family="FONTSPRING DEMO - Avionic Wide" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Dark Green"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hE1-0C-ksh" secondAttribute="trailing" constant="82" id="3lC-xf-eSV"/>
+                        <constraint firstItem="hE1-0C-ksh" firstAttribute="leading" secondItem="gMM-zJ-ml4" secondAttribute="leading" constant="82" id="4uB-Bb-oHb"/>
+                        <constraint firstItem="hE1-0C-ksh" firstAttribute="top" secondItem="gMM-zJ-ml4" secondAttribute="top" constant="17" id="dg6-at-TDf"/>
+                        <constraint firstAttribute="bottom" secondItem="hE1-0C-ksh" secondAttribute="bottom" constant="17" id="mbA-lL-rD2"/>
+                        <constraint firstAttribute="height" constant="55" id="scr-Qg-WnW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJb-Cx-SyR">
+                    <rect key="frame" x="20" y="452" width="374" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHAT DE COMUNIDAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxN-Xs-lzz">
+                            <rect key="frame" x="81" y="17" width="212" height="21"/>
+                            <fontDescription key="fontDescription" name="FONTSPRINGDEMO-AvionicWideRegular" family="FONTSPRING DEMO - Avionic Wide" pointSize="17"/>
+                            <color key="textColor" name="Font Color"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NxN-Xs-lzz" firstAttribute="leading" secondItem="CJb-Cx-SyR" secondAttribute="leading" constant="81" id="2Gg-jA-kCD"/>
+                        <constraint firstItem="NxN-Xs-lzz" firstAttribute="top" secondItem="CJb-Cx-SyR" secondAttribute="top" constant="17" id="Cjn-Ci-4Vr"/>
+                        <constraint firstAttribute="bottom" secondItem="NxN-Xs-lzz" secondAttribute="bottom" constant="17" id="T18-BE-3uM"/>
+                        <constraint firstAttribute="trailing" secondItem="NxN-Xs-lzz" secondAttribute="trailing" constant="81" id="ozS-Ni-OGG"/>
+                        <constraint firstAttribute="height" constant="55" id="um6-Z0-Z7d"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LTO-lj-dUb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="90" id="1B4-Tg-Xio"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gMM-zJ-ml4" secondAttribute="trailing" constant="20" id="5AV-8y-vYg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CJb-Cx-SyR" secondAttribute="trailing" constant="20" id="5wB-GJ-Mhy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LTO-lj-dUb" secondAttribute="trailing" constant="89" id="BnT-sQ-S9I"/>
+                <constraint firstItem="gMM-zJ-ml4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LNm-UO-btd"/>
+                <constraint firstItem="D2T-6a-vYW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="MPi-VN-pWc"/>
+                <constraint firstItem="LTO-lj-dUb" firstAttribute="top" secondItem="sKR-6K-JYU" secondAttribute="bottom" constant="8" symbolic="YES" id="Xsi-vD-Z9p"/>
+                <constraint firstItem="sKR-6K-JYU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="95" id="bvl-PJ-4zq"/>
+                <constraint firstItem="CJb-Cx-SyR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="d9G-Zm-0CY"/>
+                <constraint firstItem="gMM-zJ-ml4" firstAttribute="top" secondItem="LTO-lj-dUb" secondAttribute="bottom" constant="15" id="dg8-pM-lxF"/>
+                <constraint firstItem="sKR-6K-JYU" firstAttribute="top" secondItem="D2T-6a-vYW" secondAttribute="bottom" constant="20" id="gg4-1Y-uf5"/>
+                <constraint firstItem="CJb-Cx-SyR" firstAttribute="top" secondItem="gMM-zJ-ml4" secondAttribute="bottom" constant="20" id="gve-ut-beo"/>
+                <constraint firstItem="D2T-6a-vYW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iah-q5-8zQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sKR-6K-JYU" secondAttribute="trailing" constant="94" id="nW8-h7-JD4"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shark" width="320" height="320"/>
+        <namedColor name="Dark Green">
+            <color red="0.016000000759959221" green="0.1289999932050705" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Font Color">
+            <color red="0.043137254901960784" green="0.23137254901960785" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

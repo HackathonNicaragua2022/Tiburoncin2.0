@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" id="KGk-i7-Jjw" customClass="MessageTableViewCell" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AV1-Dy-bxp">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI4-9k-KSX">
+                                <rect key="frame" x="130" y="75.5" width="185" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfM-dP-XgD">
+                                <rect key="frame" x="10" y="25" width="100" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shark" translatesAutoresizingMaskIntoConstraints="NO" id="Ebe-hh-Llf">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="b6r-bB-2cf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ebe-hh-Llf" secondAttribute="bottom" id="1ul-ON-Xef"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ebe-hh-Llf" secondAttribute="trailing" id="7tz-P4-yDc"/>
+                                    <constraint firstItem="Ebe-hh-Llf" firstAttribute="leading" secondItem="pfM-dP-XgD" secondAttribute="leading" id="ERw-0Y-Il2"/>
+                                    <constraint firstAttribute="height" constant="100" id="Urd-OS-ZkE"/>
+                                    <constraint firstItem="Ebe-hh-Llf" firstAttribute="top" secondItem="pfM-dP-XgD" secondAttribute="top" id="eT9-X2-cmc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIs-Lv-4Tb">
+                                <rect key="frame" x="130" y="25" width="185" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pfM-dP-XgD" firstAttribute="top" secondItem="AV1-Dy-bxp" secondAttribute="top" constant="25" id="1yK-d7-wap"/>
+                            <constraint firstAttribute="trailing" secondItem="hI4-9k-KSX" secondAttribute="trailing" constant="20" id="2k6-Zc-k0w"/>
+                            <constraint firstItem="pfM-dP-XgD" firstAttribute="leading" secondItem="AV1-Dy-bxp" secondAttribute="leading" constant="10" id="DYe-R3-noS"/>
+                            <constraint firstItem="hI4-9k-KSX" firstAttribute="leading" secondItem="pfM-dP-XgD" secondAttribute="trailing" constant="20" id="EKN-rc-DNu"/>
+                            <constraint firstAttribute="height" constant="150" id="PcP-Y8-lhD"/>
+                            <constraint firstItem="yIs-Lv-4Tb" firstAttribute="top" secondItem="AV1-Dy-bxp" secondAttribute="top" constant="25" id="X6i-1f-EsH"/>
+                            <constraint firstItem="hI4-9k-KSX" firstAttribute="top" secondItem="yIs-Lv-4Tb" secondAttribute="bottom" constant="30" id="jAP-5o-gGb"/>
+                            <constraint firstItem="yIs-Lv-4Tb" firstAttribute="leading" secondItem="pfM-dP-XgD" secondAttribute="trailing" constant="20" id="ki4-G0-Wgv"/>
+                            <constraint firstAttribute="trailing" secondItem="yIs-Lv-4Tb" secondAttribute="trailing" constant="20" id="xSP-u5-j9d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AV1-Dy-bxp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dnz-8V-YbA"/>
+                    <constraint firstAttribute="trailing" secondItem="AV1-Dy-bxp" secondAttribute="trailing" id="Iro-NP-EEB"/>
+                    <constraint firstAttribute="bottom" secondItem="AV1-Dy-bxp" secondAttribute="bottom" id="dwJ-06-JSp"/>
+                    <constraint firstItem="AV1-Dy-bxp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lJA-K5-10j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageContainer" destination="pfM-dP-XgD" id="7uq-1k-Hs9"/>
+                <outlet property="messageImage" destination="Ebe-hh-Llf" id="emR-9t-brl"/>
+                <outlet property="nameLabel" destination="yIs-Lv-4Tb" id="v4d-JU-S8j"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shark" width="320" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
