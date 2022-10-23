@@ -37,12 +37,14 @@ final class TabBarCoordinator: Coordinator {
         clearSubviews(for: view)
         let coordinator = HomeCoordinator(containerView: view, videoAction: showVideo(classModel:))
         coordinator.start()
-        currentTab = .message
+        currentTab = .home
     }
     
     private func navigateToSearch(in view: UIView) {
         guard currentTab != .search else { return }
         clearSubviews(for: view)
+        let controller = SearchViewController()
+        present(viewController: controller, in: view)
         currentTab = .search
     }
     
