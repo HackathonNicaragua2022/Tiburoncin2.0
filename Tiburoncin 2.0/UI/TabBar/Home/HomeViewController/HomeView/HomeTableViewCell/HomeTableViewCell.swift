@@ -11,4 +11,9 @@ class HomeTableViewCell: UITableViewCell {
 
     // MARK: - IBOutlets
     @IBOutlet var homeCollectionView: HomeCollectionView!
+    
+    // MARK: - Setup
+    func setupCell(classModelAction: @escaping ClassModelClosure) {
+        homeCollectionView.setupView(classModelAction: classModelAction)
+    }
 }

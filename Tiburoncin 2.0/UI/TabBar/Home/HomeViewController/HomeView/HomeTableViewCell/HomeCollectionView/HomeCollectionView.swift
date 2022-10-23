@@ -21,17 +21,20 @@ class HomeCollectionView: UIView, NibOwnerLoadable {
     // MARK: - Stored Properties
     let images = [UIImage(named: "finanzas1"), UIImage(named: "finanzas2"), UIImage(named: "finanzas3")]
     let channelIcon = [UIImage(named: "finanzas1Channel"), UIImage(named: "finanzas2Channel"), UIImage(named: "finanzas3Channel")]
-    let channelName = ["Contador Contado", "Noticias Caracol", "TUTO CONTABLE"]
+    let channelName = ["Contador Contado", "Destino Profesional", "TUTO CONTABLE"]
+    
+    // MARK: - Actions
+    var classModelAction: ClassModelClosure = { _ in }
     
     // MARK: - Initializers
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         loadNibContent()
-        setupView()
     }
     
     // MARK: - Setup
-    func setupView() {
+    func setupView(classModelAction: @escaping ClassModelClosure) {
+        self.classModelAction = classModelAction
         configureCollectionView()
     }
     
@@ -64,7 +67,8 @@ extension HomeCollectionView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as? HomeCollectionViewCell else { return UICollectionViewCell() }
-        cell.setupCell(videoImage: images[indexPath.row], channelIconImage: channelIcon[indexPath.row], channelName: channelName[indexPath.row])
+        let classModel = ClassModel(className: channelName[indexPath.row], classImage: images[indexPath.row], classIcon: channelIcon[indexPath.row])
+        cell.setupCell(classModel: classModel, didTapCell: classModelAction)
         return cell
     }
 }

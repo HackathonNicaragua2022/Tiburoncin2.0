@@ -12,6 +12,11 @@
 		30810ABA2903B0B900C4B38E /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810AB92903B0B900C4B38E /* UITableViewCell.swift */; };
 		30810ABE2903B12D00C4B38E /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30810ABC2903B12D00C4B38E /* MessageTableViewCell.swift */; };
 		30810ABF2903B12D00C4B38E /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30810ABD2903B12D00C4B38E /* MessageTableViewCell.xib */; };
+		3094E73229050F8B00052FCD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73129050F8B00052FCD /* HomeViewModel.swift */; };
+		3094E7352905112700052FCD /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E7342905112700052FCD /* ClassModel.swift */; };
+		3094E73929051B0E00052FCD /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73729051B0E00052FCD /* VideoViewController.swift */; };
+		3094E73A29051B0E00052FCD /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3094E73829051B0E00052FCD /* VideoViewController.xib */; };
+		3094E73C29051B9F00052FCD /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73B29051B9F00052FCD /* VideoViewModel.swift */; };
 		309D8978290494C40020AA26 /* MessageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D8977290494C40020AA26 /* MessageCoordinator.swift */; };
 		309D897B290499B40020AA26 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D897A290499B40020AA26 /* MessageViewModel.swift */; };
 		309D897F29049B750020AA26 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D897D29049B750020AA26 /* ChatViewController.swift */; };
@@ -64,6 +69,11 @@
 		30810AB92903B0B900C4B38E /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		30810ABC2903B12D00C4B38E /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		30810ABD2903B12D00C4B38E /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		3094E73129050F8B00052FCD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3094E7342905112700052FCD /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
+		3094E73729051B0E00052FCD /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		3094E73829051B0E00052FCD /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		3094E73B29051B9F00052FCD /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		309D8977290494C40020AA26 /* MessageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCoordinator.swift; sourceTree = "<group>"; };
 		309D897A290499B40020AA26 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		309D897D29049B750020AA26 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +152,24 @@
 			path = MessageTableViewCell;
 			sourceTree = "<group>";
 		};
+		3094E7332905111500052FCD /* ClassModel */ = {
+			isa = PBXGroup;
+			children = (
+				3094E7342905112700052FCD /* ClassModel.swift */,
+			);
+			path = ClassModel;
+			sourceTree = "<group>";
+		};
+		3094E73629051AEB00052FCD /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				3094E73729051B0E00052FCD /* VideoViewController.swift */,
+				3094E73829051B0E00052FCD /* VideoViewController.xib */,
+				3094E73B29051B9F00052FCD /* VideoViewModel.swift */,
+			);
+			path = VideoView;
+			sourceTree = "<group>";
+		};
 		309D8979290496100020AA26 /* MessageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +195,7 @@
 		309D898329049CB80020AA26 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3094E7332905111500052FCD /* ClassModel */,
 				309D898429049CC50020AA26 /* ChatModel */,
 			);
 			path = Models;
@@ -214,6 +243,7 @@
 				309D89B12904EE420020AA26 /* HomeView */,
 				309D89AD2904EB750020AA26 /* HomeViewController.swift */,
 				309D89AE2904EB750020AA26 /* HomeViewController.xib */,
+				3094E73129050F8B00052FCD /* HomeViewModel.swift */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -372,6 +402,7 @@
 				30C4FE412903952C00B9748D /* Home */,
 				30C4FE462903999100B9748D /* Profile */,
 				30810AB42903AE7200C4B38E /* Messages */,
+				3094E73629051AEB00052FCD /* VideoView */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -471,6 +502,7 @@
 				30C4FE1D2902683100B9748D /* Fontspring-regular.otf in Resources */,
 				30C4FE2E2902683700B9748D /* AuthViewController.xib in Resources */,
 				309D898029049B750020AA26 /* ChatViewController.xib in Resources */,
+				3094E73A29051B0E00052FCD /* VideoViewController.xib in Resources */,
 				30C4FE3B2903871F00B9748D /* TabBarViewController.xib in Resources */,
 				30810ABF2903B12D00C4B38E /* MessageTableViewCell.xib in Resources */,
 				30C4FE0C2902681A00B9748D /* LaunchScreen.storyboard in Resources */,
@@ -490,6 +522,7 @@
 			files = (
 				30C4FE4029038ECA00B9748D /* TabBarViewModel.swift in Sources */,
 				30C4FE2F2902683700B9748D /* AuthViewModel.swift in Sources */,
+				3094E73929051B0E00052FCD /* VideoViewController.swift in Sources */,
 				309D897B290499B40020AA26 /* MessageViewModel.swift in Sources */,
 				30C4FE172902682800B9748D /* UIView.swift in Sources */,
 				30C4FE3D29038D2700B9748D /* TabBarCoordinator.swift in Sources */,
@@ -499,12 +532,14 @@
 				309D89972904D4F30020AA26 /* HomeCollectionView.swift in Sources */,
 				309D898C2904B1C70020AA26 /* ChatTableViewCell.swift in Sources */,
 				30C4FE0D2902681A00B9748D /* AppDelegate.swift in Sources */,
+				3094E7352905112700052FCD /* ClassModel.swift in Sources */,
 				30C4FE2B2902683700B9748D /* RegisterViewController.swift in Sources */,
 				30C4FE2C2902683700B9748D /* RegisterViewModel.swift in Sources */,
 				309D89942904C5120020AA26 /* UICollectionView.swift in Sources */,
 				309D897F29049B750020AA26 /* ChatViewController.swift in Sources */,
 				309D898629049CD60020AA26 /* ChatModel.swift in Sources */,
 				30C4FE0E2902681A00B9748D /* SceneDelegate.swift in Sources */,
+				3094E73229050F8B00052FCD /* HomeViewModel.swift in Sources */,
 				30810AB72903AE9800C4B38E /* MessageViewController.swift in Sources */,
 				30810ABE2903B12D00C4B38E /* MessageTableViewCell.swift in Sources */,
 				309D89A12904DF8B0020AA26 /* NibOwnerLoadable.swift in Sources */,
@@ -515,6 +550,7 @@
 				309D89882904A1C80020AA26 /* Date.swift in Sources */,
 				30C4FE49290399B000B9748D /* ProfileViewController.swift in Sources */,
 				30C4FE2D2902683700B9748D /* AuthViewController.swift in Sources */,
+				3094E73C29051B9F00052FCD /* VideoViewModel.swift in Sources */,
 				309D89B32904EE550020AA26 /* HomeView.swift in Sources */,
 				309D89AF2904EB750020AA26 /* HomeViewController.swift in Sources */,
 				309D899E2904D8760020AA26 /* HomeTableViewCell.swift in Sources */,

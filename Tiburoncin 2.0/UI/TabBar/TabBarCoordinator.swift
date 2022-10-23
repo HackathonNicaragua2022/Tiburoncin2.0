@@ -35,7 +35,7 @@ final class TabBarCoordinator: Coordinator {
     private func navigateToHome(in view: UIView) {
         guard currentTab != .home else { return }
         clearSubviews(for: view)
-        let coordinator = HomeCoordinator(containerView: view)
+        let coordinator = HomeCoordinator(containerView: view, videoAction: showVideo(classModel:))
         coordinator.start()
         currentTab = .message
     }
@@ -65,6 +65,12 @@ final class TabBarCoordinator: Coordinator {
     // MARK: - Private Methods
     private func clearSubviews(for view: UIView) {
         view.subviews.forEach { $0.removeFromSuperview() }
+    }
+    
+    private func showVideo(classModel: ClassModel) {
+        let viewModel = VideoViewModel(classModel: classModel, backAction: back)
+        let controller = VideoViewController(viewModel: viewModel)
+        navigation.pushViewController(controller, animated: true)
     }
     
     private func present(viewController: UIViewController, in view: UIView) {

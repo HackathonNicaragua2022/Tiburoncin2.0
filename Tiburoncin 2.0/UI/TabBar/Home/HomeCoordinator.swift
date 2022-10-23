@@ -9,6 +9,15 @@ import UIKit
 
 final class HomeCoordinator: Coordinator {
     
+    // MARK: - Stored Properties
+    let videoAction: ClassModelClosure
+    
+    // MARK: - Initializers
+    init(containerView: UIView, videoAction: @escaping ClassModelClosure) {
+        self.videoAction = videoAction
+        super.init(containerView: containerView)
+    }
+    
     // MARK: - Coordinator
     override func start() {
         navigateToHome()
@@ -16,7 +25,8 @@ final class HomeCoordinator: Coordinator {
     
     // MARK: - Navigation
     private func navigateToHome() {
-        let controller = HomeViewController()
+        let viewModel = HomeViewModel(videoAction: videoAction)
+        let controller = HomeViewController(viewModel: viewModel)
         navigation.pushViewController(controller, animated: false)
     }
 }
