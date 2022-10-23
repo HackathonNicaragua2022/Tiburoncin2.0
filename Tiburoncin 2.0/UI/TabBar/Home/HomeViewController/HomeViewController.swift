@@ -9,8 +9,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    // MARK: - IBOutlet
+    @IBOutlet var homeView: HomeView!
+    
     // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+    }
+
+    // MARK: - Setup
+    private func setupView() {
     }
 }

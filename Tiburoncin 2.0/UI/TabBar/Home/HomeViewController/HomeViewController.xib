@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+            <connections>
+                <outlet property="homeView" destination="vAK-Bm-ggj" id="wpy-Od-oYO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAK-Bm-ggj" customClass="HomeView" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="196" width="414" height="666"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="m6a-2O-UHq">
+                    <rect key="frame" x="0.0" y="44" width="414" height="152"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="152" id="4bP-KI-quJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLASES MAS INFLUYENTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxD-1S-HBh">
+                    <rect key="frame" x="20" y="163" width="205" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" name="Font Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vAK-Bm-ggj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1lD-w9-59o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vAK-Bm-ggj" secondAttribute="trailing" id="2D8-3X-kxc"/>
+                <constraint firstItem="uxD-1S-HBh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="119" id="3Rt-OI-hOm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uxD-1S-HBh" secondAttribute="trailing" constant="189" id="9Bx-KH-7ys"/>
+                <constraint firstItem="m6a-2O-UHq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BkA-4R-3eP"/>
+                <constraint firstItem="vAK-Bm-ggj" firstAttribute="top" secondItem="m6a-2O-UHq" secondAttribute="bottom" id="R82-zc-xdG"/>
+                <constraint firstItem="m6a-2O-UHq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="bzy-eb-2R7"/>
+                <constraint firstItem="uxD-1S-HBh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="n0V-OS-4Jl"/>
+                <constraint firstItem="m6a-2O-UHq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="peB-s8-rek"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vAK-Bm-ggj" secondAttribute="bottom" id="yVl-3r-IDD"/>
+            </constraints>
+            <point key="canvasLocation" x="231.8840579710145" y="145.98214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="homeImage" width="750" height="271"/>
+        <namedColor name="Font Color">
+            <color red="0.043137254901960784" green="0.23137254901960785" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

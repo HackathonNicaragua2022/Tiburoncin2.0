@@ -14,7 +14,18 @@ class MessageViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     // MARK: Stored Properties
-    let messages = ["Vladimir", "Sherly", "Maxihu", "Kenneth"]
+    let viewModel: MessageViewModel
+    
+    // MARK: - Initializers
+    init(viewModel: MessageViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +50,7 @@ class MessageViewController: UIViewController {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension MessageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         messages.count
@@ -48,7 +60,7 @@ extension MessageViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MessageTableViewCell.identifier,
                                                        for: indexPath) as? MessageTableViewCell
         else { return UITableViewCell() }
-        cell.setupCell(name: messages[indexPath.row])
+        cell.setupCell(chatModel: messages[indexPath.row], didTapCell: viewModel.chatAction)
         return cell
     }
 }

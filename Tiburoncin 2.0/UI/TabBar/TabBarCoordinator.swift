@@ -35,9 +35,9 @@ final class TabBarCoordinator: Coordinator {
     private func navigateToHome(in view: UIView) {
         guard currentTab != .home else { return }
         clearSubviews(for: view)
-        let controller = HomeViewController()
-        present(viewController: controller, in: view)
-        currentTab = .home
+        let coordinator = HomeCoordinator(containerView: view)
+        coordinator.start()
+        currentTab = .message
     }
     
     private func navigateToSearch(in view: UIView) {
@@ -49,8 +49,8 @@ final class TabBarCoordinator: Coordinator {
     private func navigateToMessage(in view: UIView) {
         guard currentTab != .message else { return }
         clearSubviews(for: view)
-        let controller = MessageViewController()
-        present(viewController: controller, in: view)
+        let coordinator = MessageCoordinator(containerView: view)
+        coordinator.start()
         currentTab = .message
     }
     

@@ -8,35 +8,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Tiburoncin_2_0_Prototipo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="tableView" destination="Ya3-WR-5Bu" id="m4f-IX-Nkw"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="99C-N0-5Y0">
-                    <rect key="frame" x="0.0" y="44" width="414" height="145"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="145" id="hlG-En-KsH"/>
-                    </constraints>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ya3-WR-5Bu">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="99C-N0-5Y0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Niz-af-uaT"/>
-                <constraint firstItem="99C-N0-5Y0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="i96-r5-LGu"/>
-                <constraint firstItem="99C-N0-5Y0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qSh-Zl-Hmk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ya3-WR-5Bu" secondAttribute="trailing" id="Afa-Fd-N4E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ya3-WR-5Bu" secondAttribute="bottom" id="DYx-fv-FZR"/>
+                <constraint firstItem="Ya3-WR-5Bu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Grl-zM-RJy"/>
+                <constraint firstItem="Ya3-WR-5Bu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="pNA-JN-8sQ"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+            <point key="canvasLocation" x="139" y="126"/>
         </view>
     </objects>
     <resources>
-        <image name="homeImage" width="750" height="271"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

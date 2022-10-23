@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "30C4FDCB290233F400B9748D"
-               BuildableName = "Tiburoncin 2.0.app"
+               BuildableName = "Tiburoncin 2.0 Prototipo.app"
                BlueprintName = "Tiburoncin 2.0"
                ReferencedContainer = "container:Tiburoncin 2.0.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30C4FDCB290233F400B9748D"
-            BuildableName = "Tiburoncin 2.0.app"
+            BuildableName = "Tiburoncin 2.0 Prototipo.app"
             BlueprintName = "Tiburoncin 2.0"
             ReferencedContainer = "container:Tiburoncin 2.0.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30C4FDCB290233F400B9748D"
-            BuildableName = "Tiburoncin 2.0.app"
+            BuildableName = "Tiburoncin 2.0 Prototipo.app"
             BlueprintName = "Tiburoncin 2.0"
             ReferencedContainer = "container:Tiburoncin 2.0.xcodeproj">
          </BuildableReference>

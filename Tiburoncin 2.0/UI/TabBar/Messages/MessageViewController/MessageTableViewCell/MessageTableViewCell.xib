@@ -76,6 +76,7 @@
                 <outlet property="imageContainer" destination="pfM-dP-XgD" id="7uq-1k-Hs9"/>
                 <outlet property="messageImage" destination="Ebe-hh-Llf" id="emR-9t-brl"/>
                 <outlet property="nameLabel" destination="yIs-Lv-4Tb" id="v4d-JU-S8j"/>
+                <outlet property="viewContainer" destination="AV1-Dy-bxp" id="0hr-od-Lm5"/>
             </connections>
             <point key="canvasLocation" x="138.40579710144928" y="125.89285714285714"/>
         </tableViewCell>

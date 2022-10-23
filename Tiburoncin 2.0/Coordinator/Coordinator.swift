@@ -14,7 +14,6 @@ class Coordinator {
     var containerView: UIView?
     lazy var navigation: UINavigationController = {
         let nav = UINavigationController()
-        nav.view.isHidden = true
         nav.view.translatesAutoresizingMaskIntoConstraints = false
         containerView?.addSubview(nav.view)
         if let containerView = containerView {
