@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dhurjati-Regular.ttf">
+            <string>Dhurjati</string>
+        </array>
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147.5" id="KGk-i7-Jjw" customClass="HomeHeaderViewCell" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoText" translatesAutoresizingMaskIntoConstraints="NO" id="tTE-KJ-Pon">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="48"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planes de estudio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwL-f8-cbf">
+                        <rect key="frame" x="15" y="45" width="370" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="VsG-4r-YYY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Dhurjati" family="Dhurjati" pointSize="36"/>
+                        <color key="textColor" name="Font Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderIcon" translatesAutoresizingMaskIntoConstraints="NO" id="iFQ-Uf-ulP">
+                        <rect key="frame" x="263" y="52" width="112" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="112" id="yIq-5A-8o7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLASES MAS INFLUYENTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-Fw-Et4">
+                        <rect key="frame" x="16" y="104" width="237" height="15"/>
+                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iFQ-Uf-ulP" secondAttribute="bottom" constant="8" id="AgX-HP-t7G"/>
+                    <constraint firstItem="evJ-Fw-Et4" firstAttribute="top" secondItem="YwL-f8-cbf" secondAttribute="bottom" constant="23" id="Gek-t5-wXU"/>
+                    <constraint firstAttribute="bottom" secondItem="evJ-Fw-Et4" secondAttribute="bottom" constant="24" id="HJ8-UB-Du2"/>
+                    <constraint firstItem="tTE-KJ-Pon" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y2d-81-nIm"/>
+                    <constraint firstItem="YwL-f8-cbf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="Y5H-CA-Gdw"/>
+                    <constraint firstAttribute="trailing" secondItem="YwL-f8-cbf" secondAttribute="trailing" constant="10" id="aer-eb-9v9"/>
+                    <constraint firstItem="tTE-KJ-Pon" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gQV-bc-yTI"/>
+                    <constraint firstAttribute="trailing" secondItem="iFQ-Uf-ulP" secondAttribute="trailing" constant="20" id="hoh-Q3-SAW"/>
+                    <constraint firstItem="YwL-f8-cbf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="luT-hb-fmz"/>
+                    <constraint firstItem="iFQ-Uf-ulP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="52" id="mHd-vD-U5d"/>
+                    <constraint firstItem="iFQ-Uf-ulP" firstAttribute="leading" secondItem="evJ-Fw-Et4" secondAttribute="trailing" constant="10" id="myB-43-hFZ"/>
+                    <constraint firstItem="evJ-Fw-Et4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="oLL-AT-IRd"/>
+                    <constraint firstAttribute="trailing" secondItem="tTE-KJ-Pon" secondAttribute="trailing" constant="117" id="xZC-rP-PbD"/>
+                    <constraint firstItem="iFQ-Uf-ulP" firstAttribute="top" secondItem="tTE-KJ-Pon" secondAttribute="bottom" constant="4" id="zen-ST-V7A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="192.0289855072464" y="126.22767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="HeaderIcon" width="112" height="83"/>
+        <image name="LogoText" width="241" height="40"/>
+        <namedColor name="Font Color">
+            <color red="0.0039215686274509803" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

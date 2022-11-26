@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeTabBarViewController" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="bar" destination="zgN-rW-hmx" id="Om5-aP-br6"/>
+                <outlet property="containerView" destination="BmP-Sg-TFe" id="3ns-MV-bs1"/>
+                <outlet property="tabBarContainerView" destination="RdQ-Le-CDf" id="P0n-OT-Qig"/>
+                <outlet property="tabBarStackView" destination="aUb-j0-7uq" id="Q4Y-yd-tY1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QQO-4C-7NL">
+                    <rect key="frame" x="0.0" y="44" width="414" height="828"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmP-Sg-TFe" userLabel="Container View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="767.5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GoX-E4-a5C">
+                            <rect key="frame" x="0.0" y="767.5" width="414" height="0.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.29999999999999999" id="T8X-3b-wi8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdQ-Le-CDf">
+                            <rect key="frame" x="0.0" y="768" width="414" height="60"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-j0-7uq">
+                                    <rect key="frame" x="0.0" y="10" width="414" height="40"/>
+                                </stackView>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgN-rW-hmx">
+                                    <rect key="frame" x="0.0" y="0.0" width="37" height="5"/>
+                                    <color key="backgroundColor" name="Midnight"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="5" id="1TC-Fn-2BM"/>
+                                        <constraint firstAttribute="width" constant="37" id="gRT-nY-G4s"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="2.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="aUb-j0-7uq" secondAttribute="bottom" constant="10" id="4Gp-iY-y1O"/>
+                                <constraint firstItem="zgN-rW-hmx" firstAttribute="leading" secondItem="RdQ-Le-CDf" secondAttribute="leading" id="Fri-Oe-4EO"/>
+                                <constraint firstItem="zgN-rW-hmx" firstAttribute="top" secondItem="RdQ-Le-CDf" secondAttribute="top" id="Mo0-IG-FqU"/>
+                                <constraint firstItem="aUb-j0-7uq" firstAttribute="top" secondItem="RdQ-Le-CDf" secondAttribute="top" constant="10" id="QS4-QG-wAw"/>
+                                <constraint firstAttribute="trailing" secondItem="aUb-j0-7uq" secondAttribute="trailing" id="na7-lk-NmR"/>
+                                <constraint firstAttribute="height" constant="60" id="vSr-69-aRj"/>
+                                <constraint firstItem="aUb-j0-7uq" firstAttribute="leading" secondItem="RdQ-Le-CDf" secondAttribute="leading" id="vjm-Yu-ela"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QQO-4C-7NL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2dv-X8-YlF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QQO-4C-7NL" secondAttribute="bottom" constant="-10" id="Cq4-zL-Gvg"/>
+                <constraint firstItem="QQO-4C-7NL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pJ7-2f-dqv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QQO-4C-7NL" secondAttribute="trailing" id="waf-rX-6hu"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Midnight">
+            <color red="0.14509803921568629" green="0.19215686274509805" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

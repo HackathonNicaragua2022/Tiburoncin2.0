@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dhurjati-Regular.ttf">
+            <string>Dhurjati</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="backButtonView" destination="hR5-ua-7h2" id="Aed-EQ-bCk"/>
+                <outlet property="emailTextField" destination="yau-zE-IPr" id="cNj-Ze-Lyg"/>
+                <outlet property="loginButtonView" destination="xNq-UO-dLe" id="ncf-dq-C0E"/>
+                <outlet property="passwordTextField" destination="12H-pH-EwF" id="goi-zv-CaY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginImage" translatesAutoresizingMaskIntoConstraints="NO" id="qxF-5x-VGS">
+                    <rect key="frame" x="16" y="84" width="303" height="97"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="97" id="F8Z-88-9JY"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hR5-ua-7h2">
+                    <rect key="frame" x="16" y="60" width="12" height="12"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackButton" translatesAutoresizingMaskIntoConstraints="NO" id="Foe-IE-QF4">
+                            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Foe-IE-QF4" secondAttribute="bottom" id="1kj-pF-SeU"/>
+                        <constraint firstAttribute="width" constant="12" id="Hed-bJ-dKf"/>
+                        <constraint firstItem="Foe-IE-QF4" firstAttribute="top" secondItem="hR5-ua-7h2" secondAttribute="top" id="jq6-hh-ckb"/>
+                        <constraint firstAttribute="trailing" secondItem="Foe-IE-QF4" secondAttribute="trailing" id="kAW-3J-Mk9"/>
+                        <constraint firstItem="Foe-IE-QF4" firstAttribute="leading" secondItem="hR5-ua-7h2" secondAttribute="leading" id="n4J-AT-Asg"/>
+                        <constraint firstAttribute="height" constant="12" id="wmu-3f-BHy"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yau-zE-IPr" userLabel="Email Text Field">
+                    <rect key="frame" x="16" y="190.5" width="382" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="DEd-QN-YuN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12H-pH-EwF" userLabel="Password Text Field">
+                    <rect key="frame" x="16" y="258.5" width="382" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="r45-uZ-3Rj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNq-UO-dLe">
+                    <rect key="frame" x="16" y="326.5" width="382" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIAR SESION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wi0-YC-HMI">
+                            <rect key="frame" x="100" y="14" width="182" height="24"/>
+                            <fontDescription key="fontDescription" name="Dhurjati" family="Dhurjati" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Background Green"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wi0-YC-HMI" secondAttribute="bottom" constant="14" id="5uq-7Z-nUT"/>
+                        <constraint firstItem="wi0-YC-HMI" firstAttribute="top" secondItem="xNq-UO-dLe" secondAttribute="top" constant="14" id="Bhk-3M-qfP"/>
+                        <constraint firstItem="wi0-YC-HMI" firstAttribute="leading" secondItem="xNq-UO-dLe" secondAttribute="leading" constant="100" id="LiM-SQ-WJe"/>
+                        <constraint firstAttribute="trailing" secondItem="wi0-YC-HMI" secondAttribute="trailing" constant="100" id="m3c-mS-iXo"/>
+                        <constraint firstAttribute="height" constant="52" id="mAW-zY-1yi"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="BorderColor"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="yau-zE-IPr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1Uz-wu-bVm"/>
+                <constraint firstItem="xNq-UO-dLe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1r8-KV-ENI"/>
+                <constraint firstItem="12H-pH-EwF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6CM-x4-C26"/>
+                <constraint firstItem="yau-zE-IPr" firstAttribute="top" secondItem="qxF-5x-VGS" secondAttribute="bottom" constant="9.5" id="BIC-w6-QnP"/>
+                <constraint firstItem="qxF-5x-VGS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BZk-MZ-D7E"/>
+                <constraint firstItem="hR5-ua-7h2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G4a-UA-1ji"/>
+                <constraint firstItem="qxF-5x-VGS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="QqD-6L-xus"/>
+                <constraint firstItem="xNq-UO-dLe" firstAttribute="top" secondItem="12H-pH-EwF" secondAttribute="bottom" constant="16" id="SdX-Jw-lLj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qxF-5x-VGS" secondAttribute="trailing" constant="95" id="VvG-vW-GUq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yau-zE-IPr" secondAttribute="trailing" constant="16" id="W0Y-h9-FWT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="12H-pH-EwF" secondAttribute="trailing" constant="16" id="XAh-kT-x2g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNq-UO-dLe" secondAttribute="trailing" constant="16" id="ZqT-xi-P08"/>
+                <constraint firstItem="hR5-ua-7h2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="nnd-HU-Zvq"/>
+                <constraint firstItem="12H-pH-EwF" firstAttribute="top" secondItem="yau-zE-IPr" secondAttribute="bottom" constant="16" id="uEm-e7-pvF"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackButton" width="13" height="12"/>
+        <image name="LoginImage" width="258" height="83"/>
+        <namedColor name="Background Green">
+            <color red="0.0039215686274509803" green="0.15294117647058825" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BorderColor">
+            <color red="0.37647058823529411" green="0.52549019607843139" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

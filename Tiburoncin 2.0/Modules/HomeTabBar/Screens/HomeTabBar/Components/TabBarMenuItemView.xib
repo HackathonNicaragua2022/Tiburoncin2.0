@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarMenuItemView" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundImage" destination="Vpd-l7-bVB" id="dde-zU-2iA"/>
+                <outlet property="button" destination="Yd0-GN-gPq" id="gU8-P6-MdM"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NMu-NY-gFq"/>
+                <outlet property="icon" destination="7go-zm-bao" id="uq3-1F-XgJ"/>
+                <outlet property="uploadLabel" destination="fcP-0E-I0q" id="7nb-pF-5VB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-l7-bVB">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7go-zm-bao">
+                    <rect key="frame" x="50" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="MEC-Y4-RXS"/>
+                        <constraint firstAttribute="width" constant="20" id="gS1-kH-irZ"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcP-0E-I0q">
+                    <rect key="frame" x="20" y="5" width="80" height="25"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-GN-gPq">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title=" "/>
+                    <connections>
+                        <action selector="menuTouchUpInside:" destination="-1" eventType="touchUpInside" id="eAf-SZ-3ek"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fcP-0E-I0q" secondAttribute="trailing" constant="20" id="4si-Z5-4fm"/>
+                <constraint firstItem="Yd0-GN-gPq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AM8-lt-yCc"/>
+                <constraint firstItem="Vpd-l7-bVB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BQ1-4p-lkE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fcP-0E-I0q" secondAttribute="bottom" constant="10" id="Bwz-bu-Vsm"/>
+                <constraint firstItem="Yd0-GN-gPq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EcN-1M-5V0"/>
+                <constraint firstItem="fcP-0E-I0q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Eo4-ND-luP"/>
+                <constraint firstItem="7go-zm-bao" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HP9-6s-rKy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7go-zm-bao" secondAttribute="bottom" constant="10" id="I6B-RU-lSi"/>
+                <constraint firstItem="Vpd-l7-bVB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LgO-Y7-Bbc"/>
+                <constraint firstItem="fcP-0E-I0q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Me3-ca-tab"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Yd0-GN-gPq" secondAttribute="trailing" id="NQ3-Mu-UXN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Yd0-GN-gPq" secondAttribute="bottom" id="OGz-6A-B2z"/>
+                <constraint firstAttribute="bottom" secondItem="Vpd-l7-bVB" secondAttribute="bottom" id="f4N-31-iLc"/>
+                <constraint firstItem="7go-zm-bao" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="osP-t0-KgW"/>
+                <constraint firstAttribute="trailing" secondItem="Vpd-l7-bVB" secondAttribute="trailing" id="uP5-9O-9UB"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-426.08695652173918" y="-86.049107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackgroundImage" width="70" height="40"/>
+    </resources>
+</document>

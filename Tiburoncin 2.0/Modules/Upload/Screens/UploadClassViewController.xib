@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dhurjati-Regular.ttf">
+            <string>Dhurjati</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadClassViewController" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <connections>
+                <outlet property="classNameTextField" destination="bZp-Cd-HIf" id="kjy-W7-SG6"/>
+                <outlet property="submitVideoView" destination="enw-AT-Vex" id="qms-LC-Hb1"/>
+                <outlet property="videoIdTextField" destination="FbL-aM-dDi" id="6ac-tF-A9L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subir clase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEC-vL-kfL">
+                    <rect key="frame" x="16" y="64" width="382" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="78o-Td-Q5B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Dhurjati" family="Dhurjati" pointSize="36"/>
+                    <color key="textColor" name="Font Color"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Id del video (Ej. Hz9ofKaoY50)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbL-aM-dDi">
+                    <rect key="frame" x="16" y="147" width="382" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="XjS-R3-Kxd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de la clase" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZp-Cd-HIf">
+                    <rect key="frame" x="16" y="215" width="382" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="JpN-w4-00k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enw-AT-Vex">
+                    <rect key="frame" x="16" y="283" width="382" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subir video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SR-No-xgb">
+                            <rect key="frame" x="20" y="14" width="342" height="24"/>
+                            <fontDescription key="fontDescription" name="Dhurjati" family="Dhurjati" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="Background Green"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="Dqe-Lr-dcU"/>
+                        <constraint firstAttribute="trailing" secondItem="7SR-No-xgb" secondAttribute="trailing" constant="20" id="JIg-FR-9W7"/>
+                        <constraint firstItem="7SR-No-xgb" firstAttribute="leading" secondItem="enw-AT-Vex" secondAttribute="leading" constant="20" id="Pyr-iJ-HXF"/>
+                        <constraint firstAttribute="bottom" secondItem="7SR-No-xgb" secondAttribute="bottom" constant="14" id="mx4-wS-MP4"/>
+                        <constraint firstItem="7SR-No-xgb" firstAttribute="top" secondItem="enw-AT-Vex" secondAttribute="top" constant="14" id="yRZ-Ca-Wbk"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="Border Color"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="enw-AT-Vex" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2gj-nW-GJa"/>
+                <constraint firstItem="ZEC-vL-kfL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="99O-jx-Rqs"/>
+                <constraint firstItem="bZp-Cd-HIf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="GZT-j4-kFi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bZp-Cd-HIf" secondAttribute="trailing" constant="16" id="I3C-at-wsd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FbL-aM-dDi" secondAttribute="trailing" constant="16" id="QeY-LG-Rif"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZEC-vL-kfL" secondAttribute="trailing" constant="16" id="SFa-Pa-L4A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="enw-AT-Vex" secondAttribute="trailing" constant="16" id="VqH-mb-SS7"/>
+                <constraint firstItem="FbL-aM-dDi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="edT-4c-745"/>
+                <constraint firstItem="bZp-Cd-HIf" firstAttribute="top" secondItem="FbL-aM-dDi" secondAttribute="bottom" constant="16" id="eqe-hq-gyi"/>
+                <constraint firstItem="enw-AT-Vex" firstAttribute="top" secondItem="bZp-Cd-HIf" secondAttribute="bottom" constant="16" id="erY-dZ-Pre"/>
+                <constraint firstItem="ZEC-vL-kfL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vtd-Xs-jhQ"/>
+                <constraint firstItem="FbL-aM-dDi" firstAttribute="top" secondItem="ZEC-vL-kfL" secondAttribute="bottom" constant="16" id="xVp-er-cIm"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="126"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background Green">
+            <color red="0.0039215686274509803" green="0.15294117647058825" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Border Color">
+            <color red="0.37647058823529411" green="0.52549019607843139" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Font Color">
+            <color red="0.0039215686274509803" green="0.24313725490196078" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

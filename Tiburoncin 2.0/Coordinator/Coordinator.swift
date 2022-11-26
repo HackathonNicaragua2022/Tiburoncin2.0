@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  Tiburoncin 2.0
 //
-//  Created by AlejandroVCastillo on 10/22/22.
+//  Created by AlejandroVCastillo on 11/22/22.
 //
 
 import UIKit
@@ -10,10 +10,11 @@ import UIKit
 class Coordinator {
     
     // MARK: - Stored Properties
-    
     var containerView: UIView?
+    
     lazy var navigation: UINavigationController = {
         let nav = UINavigationController()
+        nav.view.isHidden = true
         nav.view.translatesAutoresizingMaskIntoConstraints = false
         containerView?.addSubview(nav.view)
         if let containerView = containerView {

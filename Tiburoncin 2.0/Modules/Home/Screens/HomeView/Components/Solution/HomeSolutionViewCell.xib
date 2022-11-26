@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeSolutionViewCell" customModule="Tiburoncin_2_0" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOLUCION A LOS PROBLEMAS MAS FRECUENTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEO-dY-dQL">
+                        <rect key="frame" x="16" y="48" width="312" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="sQi-qM-qw2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8Lg-aA-b5u">
+                        <rect key="frame" x="16" y="87" width="312" height="110"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="110" id="2WT-XO-EnG"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vnJ-Cm-hjh">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Lg-aA-b5u" firstAttribute="top" secondItem="cEO-dY-dQL" secondAttribute="bottom" constant="24" id="0aA-yr-WmY"/>
+                    <constraint firstAttribute="bottom" secondItem="8Lg-aA-b5u" secondAttribute="bottom" id="Nh6-At-ATD"/>
+                    <constraint firstItem="cEO-dY-dQL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Owc-wX-8zE"/>
+                    <constraint firstAttribute="trailing" secondItem="cEO-dY-dQL" secondAttribute="trailing" constant="16" id="dE7-kE-PWZ"/>
+                    <constraint firstAttribute="trailing" secondItem="8Lg-aA-b5u" secondAttribute="trailing" constant="16" id="ibF-sf-AYV"/>
+                    <constraint firstItem="8Lg-aA-b5u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rL6-OO-Ltp"/>
+                    <constraint firstItem="cEO-dY-dQL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="48" id="zQl-pX-WXT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionHeight" destination="2WT-XO-EnG" id="e9J-q4-Ccq"/>
+                <outlet property="collectionView" destination="8Lg-aA-b5u" id="4Of-hB-j1W"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="86"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
